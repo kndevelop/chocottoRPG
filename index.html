@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>チョコラン風RPG Prototype</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="hud">
+    <div id="status">HP: 100 | ATK: 10 | Gold: 0</div>
+    <div id="toast-container"></div>
+    <button id="btn-save">セーブ</button>
+    <button id="btn-newgame">ニューゲーム</button>
+    <button id="btn-clear">セーブ削除</button>
+  </div>
+
+  <!-- Phaser本体 -->
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3/dist/phaser.js"></script>
+
+  <!-- Core系 -->
+  <script src="core/save.js"></script>
+  <script src="core/player.js"></script>
+  <script src="core/inventory.js"></script>
+  <script src="core/hud.js"></script>
+  <script src="core/toast.js"></script>
+  <script src="core/ui.js"></script>
+  <script src="core/loader.js"></script>
+
+  <!-- Scene -->
+  <script src="scenes/mainScene.js"></script>
+
+  <!-- Game起動 -->
+  <script src="main.js"></script>
+</body>
+</html>
